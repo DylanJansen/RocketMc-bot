@@ -13,6 +13,9 @@ var questionstatus = 0;
 
 module.exports.run = async (Discord, client, message, args) => {
 message.reply("application form has been sent in pm")
+
+
+
     message.author.createDM().then((channel) => {
 channel.send("First, keep in mind that if you send false applications you will be punished as stated in our #rules. By applying you agree to our rules.")
         channel.send(questionlist[0])
